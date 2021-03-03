@@ -1,0 +1,116 @@
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --dark-blue: hsl(229, 23%, 23%);
+  --gray-blue: hsl(227, 10%, 46%);
+  --dark-grey: hsl(0, 0%, 59%);
+  --white: hsl(100, 100%, 100%);
+}
+
+body {
+  width: 1440px;
+  background-color: var(--dark-cyan);
+  background-image: url(../images/bg-pattern-top.svg),
+    url(../images/bg-pattern-bottom.svg);
+  background-position: 0 50%, 100% -50%;
+  background-repeat: no-repeat, no-repeat;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
+
+.profile {
+  background-color: var(--white);
+  height: 30rem;
+  width: 30rem;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
+  border-radius: 2em;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.header {
+  height: 10rem;
+  width: 30rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url(../images/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.profile-img {
+  border-radius: 50%;
+  border: 5px solid white;
+  margin-top: 6.5rem;
+}
+
+.body {
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 25px;
+}
+
+.body strong {
+  font-weight: 700;
+  color: var(--dark-blue);
+}
+
+.body p {
+  font-weight: 400;
+  color: var(--dark-blue);
+}
+
+.city {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--dark-blue);
+}
+
+.solid {
+  margin-top: 2rem;
+  border-top: 3px solid rgb(255, 255, 255);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 1rem;
+}
+
+.numbers {
+  text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--dark-blue);
+}
+
+.description {
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  margin: -1.5rem;
+  color: var(--dark-blue);
+}
